@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AvisOrdonnateur">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/myToolbarAvis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/valuebColor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Avis Ordonnateur"
+        app:titleTextColor="@color/PrimaryColor"
+        app:popupTheme="@color/PrimaryColor"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/idDateNoteavis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date Ordonnancement"
+        android:layout_marginLeft="@dimen/marginleftWidget"
+        android:layout_margin="@dimen/marginBetweenWidget"
+        app:layout_constraintStart_toStartOf="parent"
+        style="@style/mystyleValue"
+        app:layout_constraintTop_toBottomOf="@id/myToolbarAvis"
+        android:inputType="datetime"
+        />
+
+
+    <EditText
+    android:id="@+id/idAvisordonnateur"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="Avis Motive de l'ordonnateur "
+    android:inputType="text"
+    style="@style/mystyleValue"
+    android:layout_margin="@dimen/marginBetweenWidget"
+    android:layout_marginLeft="@dimen/marginleftWidget"
+    android:layout_marginRight="@dimen/marginRightPerentToboton"
+    app:layout_constraintTop_toBottomOf="@id/idDateNoteavis"
+    app:layout_constraintStart_toStartOf="parent"
+    />
+
+    <EditText
+        android:id="@+id/idmontantchiffreordon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Montant en chiffre "
+        android:inputType="numberDecimal"
+        style="@style/mystyleValue"
+        android:layout_margin="@dimen/marginBetweenWidget"
+        android:layout_marginLeft="@dimen/marginleftWidget"
+        android:layout_marginRight="@dimen/marginRightPerentToboton"
+        app:layout_constraintTop_toBottomOf="@id/idAvisordonnateur"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <EditText
+        android:id="@+id/idmontantlettreordon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Montant en lettre "
+        android:inputType="text"
+        style="@style/mystyleValue"
+        android:layout_margin="@dimen/marginBetweenWidget"
+        android:layout_marginLeft="@dimen/marginleftWidget"
+        android:layout_marginRight="@dimen/marginRightPerentToboton"
+        app:layout_constraintTop_toBottomOf="@id/idmontantchiffreordon"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+
+    <Spinner
+        android:id="@+id/idDeviseordon"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/marginBetweenWidget"
+        android:layout_marginLeft="@dimen/marginleftWidget"
+        android:layout_marginRight="@dimen/marginRightPerentToboton"
+        app:layout_constraintTop_toBottomOf="@id/idmontantlettreordon"
+        app:layout_constraintStart_toStartOf="parent"
+        android:spinnerMode="dropdown"
+
+        />
+
+    <Button
+        android:id="@+id/btnPrev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Precedent"
+        android:layout_margin="@dimen/marginBetweenWidget"
+        app:layout_constraintTop_toBottomOf="@id/idDeviseordon"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginRight="@dimen/marginRightPerentToboton"
+        style="@style/mystyleButton"
+        />
+
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Suivant"
+        android:layout_margin="@dimen/marginBetweenWidget"
+        app:layout_constraintTop_toBottomOf="@id/idDeviseordon"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="@dimen/marginRightPerentToboton"
+        style="@style/mystyleButton"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="marginleftWidget">20dp</dimen>
+    <dimen name="sizeTextVieu">40sp</dimen>
+    <dimen name="SizeEditText">60dp</dimen>
+    <dimen name="ButtonSize">30dp</dimen>
+    <dimen name="SizeTitle">20sp</dimen>
+    <dimen name="sizeGetvalue">15sp</dimen>
+    <dimen name="SizeleftTile">140dp</dimen>
+    <dimen name="LeftWidgetToParent">20dp</dimen>
+    <dimen name="marginBetweenWidget">20dp</dimen>
+    <dimen name="marginRightPerentToboton">10dp</dimen>
+    <dimen name="marginTopTitle">20dp</dimen>
+    <dimen name="marginBottonParent">30dp</dimen>
+
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/idNewNote"
+        android:orderInCategory="100"
+        android:title="Nouvelle Note"
+        app:showAsAction="never">
+
+    </item>
+
+    <item
+        android:id="@+id/mn_rapports"
+        android:orderInCategory="101"
+        android:title="Rapports"
+        app:showAsAction="never">
+
+    </item>
+
+    <item
+        android:id="@+id/mn_impression"
+        android:orderInCategory="102"
+        android:title="Impression quittance"
+        app:showAsAction="never">
+
+    </item>
+
+    <item
+        android:id="@+id/mn_regularisation"
+        android:orderInCategory="103"
+        android:title="Regularisation"
+        app:showAsAction="never">
+
+    </item>
+
+    <item
+        android:id="@+id/mn_configuration"
+        android:orderInCategory="104"
+        android:title="Configuration"
+        app:showAsAction="never">
+
+    </item>
+
+
+</menu>

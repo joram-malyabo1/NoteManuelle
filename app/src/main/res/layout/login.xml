@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/PrimaryColor"
+    >
+
+
+    <TextView
+        android:id="@+id/titlelogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Note Manuelle "
+        android:layout_marginTop="@dimen/marginTopTitle"
+        style="@style/StyleTitle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_margin="200dp"
+        />
+
+
+    <EditText
+        android:id="@+id/TextNomUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nom Utilisateur"
+        android:layout_margin="@dimen/marginBetweenWidget"
+        android:layout_marginLeft="@dimen/marginleftWidget"
+        app:layout_constraintTop_toBottomOf="@id/titlelogin"
+        android:inputType="text"
+        android:background="@drawable/custombutton"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:gravity="center"
+        android:textColorHint="@color/colorAccent"
+        android:textSize="22sp"
+        />
+
+
+
+
+    <EditText
+        android:id="@+id/PassWord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Mot de Pass"
+        android:textColorHint="@color/colorAccent"
+        android:layout_marginLeft="@dimen/marginleftWidget"
+        app:layout_constraintTop_toBottomOf="@id/TextNomUser"
+        android:layout_margin="@dimen/marginBetweenWidget"
+        android:inputType="textPassword"
+        android:background="@drawable/custombutton"
+        android:drawableLeft="@drawable/ic_lock_black_24dp"
+        android:gravity="center"
+        android:textSize="22sp"
+
+        />
+
+    <ImageView
+        android:id="@+id/showPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_visibility_black_24dp"
+        app:layout_constraintEnd_toEndOf="@id/PassWord"
+        app:layout_constraintBottom_toBottomOf="@id/PassWord"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="3dp"
+
+        />
+
+    <Button
+        android:id="@+id/BtnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Se connecter"
+        app:layout_constraintTop_toBottomOf="@id/showPassword"
+        style="@style/mystyleButtonLogin"
+        android:layout_marginLeft="@dimen/marginleftWidget"
+        android:layout_marginRight="@dimen/marginleftWidget"
+        android:layout_margin="@dimen/marginBetweenWidget"
+        android:background="@drawable/custumbutton2"
+        android:drawableLeft="@drawable/ic_vpn_key_black_24dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Liquidation">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/myToolbarliquidation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/valuebColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:title="Element de liquidation"
+            app:titleTextColor="@color/PrimaryColor"
+            app:popupTheme="@color/PrimaryColor"
+            android:gravity="center"
+            />
+
+        <EditText
+            android:id="@+id/noteDebut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/mystyleValue"
+            android:layout_margin="@dimen/marginBetweenWidget"
+            android:layout_marginLeft="@dimen/marginleftWidget"
+            android:layout_marginRight="@dimen/marginRightPerentToboton"
+            app:layout_constraintTop_toBottomOf="@id/myToolbarliquidation"
+            app:layout_constraintStart_toStartOf="parent"
+            android:hint=" Note de debut"
+            android:textColorHint="#000"
+            />
+
+        <EditText
+            android:id="@+id/idDatedebut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/noteDebut"
+            android:layout_margin="@dimen/marginBetweenWidget"
+            android:layout_marginLeft="@dimen/marginleftWidget"
+            android:layout_marginRight="@dimen/marginRightPerentToboton"
+            app:layout_constraintStart_toStartOf="parent"
+            android:hint="Date debut de la Note"
+            style="@style/mystyleValue"
+
+            />
+
+        <EditText
+            android:id="@+id/tauxRef"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Taux de reference"
+            android:inputType="number"
+            android:layout_marginLeft="@dimen/marginleftWidget"
+            android:layout_margin="@dimen/marginBetweenWidget"
+            style="@style/mystyleValue"
+            android:layout_marginRight="@dimen/marginRightPerentToboton"
+            app:layout_constraintTop_toBottomOf="@id/idDatedebut"
+            app:layout_constraintStart_toStartOf="parent"
+
+            />
+
+        <EditText
+            android:id="@+id/montant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Montant"
+            android:inputType="text"
+            style="@style/mystyleValue"
+            android:layout_margin="@dimen/marginBetweenWidget"
+            android:layout_marginLeft="@dimen/marginleftWidget"
+            android:layout_marginRight="@dimen/marginRightPerentToboton"
+            app:layout_constraintTop_toBottomOf="@id/tauxRef"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <Spinner
+
+            android:id="@+id/idDeviseliquidation"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/marginBetweenWidget"
+            android:layout_marginLeft="@dimen/marginleftWidget"
+            android:layout_marginRight="@dimen/marginRightPerentToboton"
+            app:layout_constraintTop_toBottomOf="@id/montant"
+            app:layout_constraintStart_toStartOf="parent"
+            android:spinnerMode="dropdown"
+            android:background="@color/valuebColor"
+            android:textAlignment="center"
+
+            />
+
+
+        <EditText
+            android:id="@+id/montantLettre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Montant en toute lettre"
+            android:inputType="text"
+            style="@style/mystyleValue"
+            android:layout_margin="@dimen/marginBetweenWidget"
+            android:layout_marginLeft="@dimen/marginleftWidget"
+            android:layout_marginRight="@dimen/marginRightPerentToboton"
+            app:layout_constraintTop_toBottomOf="@id/idDeviseliquidation"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+
+        <EditText
+            android:id="@+id/idtauxEchange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Taux d'echange"
+            android:inputType="text"
+            style="@style/mystyleValue"
+            android:layout_margin="@dimen/marginBetweenWidget"
+            android:layout_marginLeft="@dimen/marginleftWidget"
+            android:layout_marginRight="@dimen/marginRightPerentToboton"
+            app:layout_constraintTop_toBottomOf="@id/montantLettre"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+
+        <EditText
+            android:id="@+id/idprecison"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Precision"
+            android:inputType="text"
+            style="@style/mystyleValue"
+            android:layout_margin="@dimen/marginBetweenWidget"
+            android:layout_marginLeft="@dimen/marginleftWidget"
+            android:layout_marginRight="@dimen/marginRightPerentToboton"
+            app:layout_constraintTop_toBottomOf="@id/idtauxEchange"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+
+        <EditText
+            android:id="@+id/imptime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="NoteImprime"
+            android:inputType="text"
+            style="@style/mystyleValue"
+            android:layout_margin="@dimen/marginBetweenWidget"
+            android:layout_marginLeft="@dimen/marginleftWidget"
+            android:layout_marginRight="@dimen/marginRightPerentToboton"
+            app:layout_constraintTop_toBottomOf="@id/idprecison"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <Button
+            android:id="@+id/btnPrev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Precedent"
+            style="@style/mystyleButton"
+            android:layout_marginRight="@dimen/marginRightPerentToboton"
+            android:layout_margin="@dimen/marginBetweenWidget"
+            app:layout_constraintTop_toBottomOf="@id/imptime"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Suivant"
+            style="@style/mystyleButton"
+            android:layout_marginLeft="@dimen/marginleftWidget"
+            android:layout_marginRight="@dimen/marginRightPerentToboton"
+            android:layout_margin="@dimen/marginBetweenWidget"
+            android:layout_marginBottom="@dimen/marginBottonParent"
+            app:layout_constraintTop_toBottomOf="@id/imptime"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

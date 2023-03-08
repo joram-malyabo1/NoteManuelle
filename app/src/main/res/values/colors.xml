@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="PrimaryColor">#ede7f6</color>
+    <color name="SecondaryColor">#0277db</color>
+    <color name="WidgetColor">#ec407a</color>
+    <color name="valueColor">#1a237e</color>
+    <color name="valuebColor">#1a237e</color>
+    <color name="designColor">#000000</color>
+    <color name="TitleToolBarColor">#fff</color>
+    <color name="WaitColor">#fff</color>
+
+</resources>

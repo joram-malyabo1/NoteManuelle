@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Entity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/myToolbarEntity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/valuebColor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Enitié"
+        app:titleTextColor="@color/PrimaryColor"
+        app:popupTheme="@color/PrimaryColor"
+        android:gravity="center"
+        />
+
+
+    <EditText
+        android:id="@+id/idEntity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/myToolbarEntity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="Rechercher l'entité"
+        android:layout_marginLeft="@dimen/marginleftWidget"
+        android:layout_margin="@dimen/marginBetweenWidget"
+        android:drawableRight="@drawable/ic_search_black_24dp"
+        />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/idEntity"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginLeft="@dimen/marginleftWidget"
+        />
+
+    <Button
+        android:id="@+id/btnPrev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Precedent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginLeft="@dimen/marginleftWidget"
+        android:layout_marginBottom="@dimen/marginBottonParent"
+        style="@style/mystyleButton"
+        />
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Suivant"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="@dimen/marginBottonParent"
+        android:layout_marginRight="@dimen/marginRightPerentToboton"
+        style="@style/mystyleButton"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

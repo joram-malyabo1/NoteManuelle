@@ -1,0 +1,50 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/TitleToolBarColor</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/designColor</item>
+    </style>
+
+
+
+    <style name="StyleTitle"  parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/SizeTitle</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="StylegetValue"  parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/sizeGetvalue</item>
+    </style>
+
+    <style name="mystyleButton" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textColor">@color/valuebColor</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="mystyleButtonLogin" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textColor">@color/WaitColor</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="mystyleButtonSave" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textColor">@color/WaitColor</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+    <style name="mystyleValue" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textColor">@color/designColor</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

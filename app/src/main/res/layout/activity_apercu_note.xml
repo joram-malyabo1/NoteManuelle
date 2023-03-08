@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ApercuNote">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ApercuNote">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/myToolbarAppercu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/valuebColor"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:title="Apercu de la note"
+            app:titleTextColor="@color/PrimaryColor"
+            app:popupTheme="@color/PrimaryColor"
+            android:gravity="center"
+            />
+
+        <TextView
+            android:id="@+id/idrepublique"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/mystyleValue"
+            app:layout_constraintTop_toBottomOf="@id/myToolbarAppercu"
+            android:text="REPULIQUE DEMOCRATIQUE DU CONGO "
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/idministere"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/mystyleValue"
+            android:text=" MINISTERE PROVINCIAL DES FINANCES "
+            app:layout_constraintTop_toBottomOf="@id/idrepublique"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/idprovince"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/mystyleValue"
+            android:text="  PROVINCE DU NORD - KIVU "
+            app:layout_constraintTop_toBottomOf="@id/idministere"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/idservice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/marginBetweenWidget"
+            style="@style/mystyleValue"
+            android:layout_marginLeft="@dimen/marginleftWidget"
+            android:text=" MINISTERE OU SERVICE : "
+            app:layout_constraintTop_toBottomOf="@id/idprovince"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/idgetService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/marginBetweenWidget"
+            style="@style/StylegetValue"
+            android:layout_marginLeft="@dimen/marginleftWidget"
+            app:layout_constraintTop_toBottomOf="@id/idprovince"
+            app:layout_constraintStart_toEndOf="@id/idservice"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="DGRNK"
+            />
+
+        <TextView
+            android:id="@+id/idville"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/mystyleValue"
+            android:layout_marginLeft="@dimen/marginBetweenWidget"
+            android:text=" TERRITOIRE OU VILLE :"
+            app:layout_constraintTop_toBottomOf="@id/idservice"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/idgetVille"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/StylegetValue"
+            android:layout_marginLeft="@dimen/marginleftWidget"
+            app:layout_constraintTop_toBottomOf="@id/idgetService"
+            app:layout_constraintStart_toEndOf="@id/idservice"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="GOMA"
+
+            />
+
+        <TextView
+            android:id="@+id/idantene"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/mystyleValue"
+            android:layout_marginLeft="@dimen/marginBetweenWidget"
+            android:text=" CENTRE /ANTENE : "
+            app:layout_constraintTop_toBottomOf="@id/idville"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/idgetAntene"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/StylegetValue"
+            android:layout_marginLeft="@dimen/marginleftWidget"
+            app:layout_constraintTop_toBottomOf="@id/idgetVille"
+            app:layout_constraintStart_toEndOf="@id/idantene"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="Direction Génerale"
+            />
+
+        <!--LA PARTIE DATE ET NUMER DE LA NOTE-->
+
+        <!--  TEXTVIEW DE LA DATE DATE NOTE-->
+
+        <TextView
+            android:id="@+id/idTexViewtDateNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date : "
+            style="@style/mystyleButton"
+            app:layout_constraintTop_toBottomOf="@id/idantene"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="@dimen/marginleftWidget"
+            android:layout_marginTop="@dimen/marginBetweenWidget"
+            />
+
+        <!-- VALEUR A RECUPERER EN JAVA DE LA DATE DATE NOTE-->
+        <TextView
+            android:id="@+id/idDateNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            style="@style/StylegetValue"
+            app:layout_constraintTop_toBottomOf="@id/idantene"
+            app:layout_constraintStart_toEndOf="@id/idTexViewtDateNote"
+            android:layout_marginLeft="@dimen/marginleftWidget"
+            android:layout_marginTop="@dimen/marginBetweenWidget"
+            />
+
+        <!-- TEXTVIEW DE NUMERO DELA NOTE -->
+
+        <TextView
+            android:id="@+id/idTextViewNumNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Numero : "
+            style="@style/mystyleButton"
+            app:layout_constraintTop_toBottomOf="@id/idTexViewtDateNote"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="@dimen/marginleftWidget"
+            />
+
+        <!-- VALEUR A RECUPERER EN JAVA DU NUMERO DELA NOTE -->
+        <TextView
+            android:id="@+id/idNumeroNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            style="@style/StylegetValue"
+            app:layout_constraintTop_toBottomOf="@id/idTexViewtDateNote"
+            app:layout_constraintStart_toEndOf="@id/idTextViewNumNote"
+            />
+
+        <!-- TEXTVIEW JUST UN AFICHE -->
+
+        <TextView
+            android:id="@+id/idApercu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" NOTE DE PERCEPTION"
+            app:layout_constraintTop_toBottomOf="@id/idTextViewNumNote"
+            style="@style/StyleTitle"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginLeft="@dimen/marginleftWidget"
+            android:layout_marginRight="@dimen/marginRightPerentToboton"
+            android:layout_marginTop="@dimen/marginBetweenWidget"
+            />
+
+        <TextView
+            android:id="@+id/idServicetaxateur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. A REMPLIR PAR LE SERVICE TAXATEUR"
+            app:layout_constraintTop_toBottomOf="@id/idApercu"
+            style="@style/mystyleValue"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="@dimen/marginTopTitle"
+            />
+
+        <!-- TEXTVIEW DE NUMERO DELA NOTE -->
+
+        <TextView
+            android:id="@+id/idTextViewNoteDebut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Note de debit ou Taxation : "
+            style="@style/mystyleButton"
+            app:layout_constraintTop_toBottomOf="@id/idServicetaxateur"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="@dimen/marginleftWidget"
+            android:layout_marginTop="@dimen/marginTopTitle"
+            />
+
+        <!-- VALEUR A RECUPERER EN JAVA DU NUMERO DELA NOTE -->
+        <TextView
+            android:id="@+id/idNoteDebut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            style="@style/StylegetValue"
+            app:layout_constraintTop_toBottomOf="@id/idServicetaxateur"
+            app:layout_constraintStart_toEndOf="@id/idTextViewNoteDebut"
+            android:layout_marginTop="@dimen/marginTopTitle"
+            />
+
+        <TextView
+            android:id="@+id/idTextViewDateDebut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date note de debit : "
+            style="@style/mystyleButton"
+            app:layout_constraintTop_toBottomOf="@id/idTextViewNoteDebut"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="@dimen/marginleftWidget"
+
+            />
+
+        <!-- VALEUR A RECUPERER EN JAVA DU NUMERO DELA NOTE -->
+        <TextView
+            android:id="@+id/idDateDebut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            style="@style/StylegetValue"
+            app:layout_constraintTop_toBottomOf="@id/idTextViewNoteDebut"
+            app:layout_constraintStart_toEndOf="@id/idTextViewNoteDebut"
+
+            />
+
+        <!-- TEXTVIEW DU NUMERO DELA NOTE -->
+        <TextView
+            android:id="@+id/idTextViewActe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Acte generateur (Libelle) : "
+            style="@style/mystyleButton"
+            app:layout_constraintTop_toBottomOf="@id/idTextViewDateDebut"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="@dimen/marginleftWidget"
+
+            />
+
+        <!-- VALEUR A RECUPERER EN JAVA DU NUMERO DELA NOTE -->
+        <TextView
+            android:id="@+id/idActe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            style="@style/StylegetValue"
+            app:layout_constraintTop_toBottomOf="@id/idDateDebut"
+            app:layout_constraintStart_toEndOf="@id/idTextViewNoteDebut"
+
+            />
+
+        <!-- TEXTVIEW DU NUMERO DELA NOTE -->
+        <TextView
+            android:id="@+id/idTextViewArticle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Article Budgetaire : "
+            style="@style/mystyleButton"
+            app:layout_constraintTop_toBottomOf="@id/idTextViewActe"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="@dimen/marginleftWidget"
+
+            />
+
+        <!-- VALEUR A RECUPERER EN JAVA DU NUMERO DELA NOTE -->
+        <TextView
+            android:id="@+id/idArtcile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            style="@style/StylegetValue"
+            app:layout_constraintTop_toBottomOf="@id/idTextViewActe"
+            app:layout_constraintStart_toEndOf="@id/idTextViewNoteDebut"
+
+            />
+
+        <!-- TEXTVIEW DU NUMERO DELA NOTE -->
+        <TextView
+            android:id="@+id/idTextViewTaux"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Taux et Reference du texte: "
+            style="@style/mystyleButton"
+            app:layout_constraintTop_toBottomOf="@id/idTextViewArticle"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="@dimen/marginleftWidget"
+
+            />
+
+        <!-- VALEUR A RECUPERER EN JAVA DU NUMERO DELA NOTE -->
+        <TextView
+            android:id="@+id/idTaux"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            style="@style/StylegetValue"
+            app:layout_constraintTop_toBottomOf="@id/idTextViewArticle"
+            app:layout_constraintStart_toEndOf="@id/idTextViewNoteDebut"
+            />
+
+        <!-- TEXTVIEW DU NUMERO DELA NOTE -->
+        <TextView
+            android:id="@+id/idTextViewMontantChiffre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Montant a payer en chiffre: "
+            style="@style/mystyleButton"
+            app:layout_constraintTop_toBottomOf="@id/idTextViewTaux"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="@dimen/marginleftWidget"
+            />
+
+        <!-- VALEUR A RECUPERER EN JAVA DU NUMERO DELA NOTE -->
+        <TextView
+            android:id="@+id/idMontantChiffre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            style="@style/StylegetValue"
+            app:layout_constraintTop_toBottomOf="@id/idTextViewTaux"
+            app:layout_constraintStart_toEndOf="@id/idTextViewNoteDebut"/>
+
+        <!-- TEXTVIEW DU NUMERO DELA NOTE -->
+        <TextView
+            android:id="@+id/idTextViewMontantLettre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Montant a payer en Lettre: "
+            style="@style/mystyleButton"
+            app:layout_constraintTop_toBottomOf="@id/idTextViewMontantChiffre"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="@dimen/marginleftWidget"
+            />
+
+        <!-- VALEUR A RECUPERER EN JAVA DU NUMERO DELA NOTE -->
+        <TextView
+            android:id="@+id/idMontantLettre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            style="@style/StylegetValue"
+            app:layout_constraintTop_toBottomOf="@id/idTextViewMontantChiffre"
+            app:layout_constraintStart_toEndOf="@id/idTextViewNoteDebut"/>
+
+        <!-- TEXTVIEW DU NUMERO DELA NOTE -->
+        <TextView
+            android:id="@+id/idTextViewTaxateur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nom de l'agent Taxateur: "
+            style="@style/mystyleButton"
+            app:layout_constraintTop_toBottomOf="@id/idTextViewMontantLettre"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="@dimen/marginleftWidget"
+            />
+
+        <!-- VALEUR A RECUPERER EN JAVA DU NUMERO DELA NOTE -->
+        <TextView
+            android:id="@+id/idTaxateur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            style="@style/StylegetValue"
+            app:layout_constraintTop_toBottomOf="@id/idTextViewMontantLettre"
+            app:layout_constraintStart_toEndOf="@id/idTextViewNoteDebut"/>
+
+        <!-- TEXTVIEW DU NUMERO DELA NOTE -->
+        <TextView
+            android:id="@+id/idTextViewQualite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Qualite : "
+            style="@style/mystyleButton"
+            app:layout_constraintTop_toBottomOf="@id/idTextViewTaxateur"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="@dimen/marginleftWidget"
+            />
+
+        <!-- VALEUR A RECUPERER EN JAVA DU NUMERO DELA NOTE -->
+        <TextView
+            android:id="@+id/idQualite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            style="@style/StylegetValue"
+            app:layout_constraintTop_toBottomOf="@id/idTextViewTaxateur"
+            app:layout_constraintStart_toEndOf="@id/idTextViewNoteDebut"/>
+
+        <!-- TEXTVIEW DU NUMERO DELA NOTE -->
+
+        <TextView
+            android:id="@+id/idTextViewNom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nom ou raison Sociale : "
+            style="@style/mystyleButton"
+            app:layout_constraintTop_toBottomOf="@id/idTextViewQualite"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="@dimen/marginleftWidget"
+            />
+
+        <!-- VALEUR A RECUPERER EN JAVA DU NUMERO DELA NOTE -->
+        <TextView
+            android:id="@+id/idNomAssujetti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            style="@style/StylegetValue"
+            app:layout_constraintTop_toBottomOf="@id/idTextViewQualite"
+            app:layout_constraintStart_toEndOf="@id/idTextViewNoteDebut"/>
+
+        <!-- TEXTVIEW DU NUMERO DELA NOTE -->
+        <TextView
+            android:id="@+id/idTextViewPC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pour Compte "
+            style="@style/mystyleButton"
+            app:layout_constraintTop_toBottomOf="@id/idTextViewNom"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="@dimen/marginleftWidget"
+            />
+
+        <!-- VALEUR A RECUPERER EN JAVA DU NUMERO DELA NOTE -->
+        <TextView
+            android:id="@+id/idPC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            style="@style/StylegetValue"
+            app:layout_constraintTop_toBottomOf="@id/idTextViewNom"
+            app:layout_constraintStart_toEndOf="@id/idTextViewNoteDebut"/>
+
+        <!-- TEXTVIEW DU NUMERO DELA NOTE -->
+        <TextView
+            android:id="@+id/idTextViewVille"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ville : "
+            style="@style/mystyleButton"
+            app:layout_constraintTop_toBottomOf="@id/idTextViewPC"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="@dimen/marginleftWidget"
+            />
+
+        <!-- VALEUR A RECUPERER EN JAVA DU NUMERO DELA NOTE -->
+        <TextView
+            android:id="@+id/idVille"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            style="@style/StylegetValue"
+            app:layout_constraintTop_toBottomOf="@id/idTextViewPC"
+            app:layout_constraintStart_toEndOf="@id/idTextViewNoteDebut"/>
+
+        <!-- TEXTVIEW DU NUMERO DELA NOTE -->
+        <TextView
+            android:id="@+id/idTextViewQuartier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quartier :"
+            style="@style/mystyleButton"
+            app:layout_constraintTop_toBottomOf="@id/idTextViewVille"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="@dimen/marginleftWidget"
+            />
+
+        <!-- VALEUR A RECUPERER EN JAVA DU NUMERO DELA NOTE -->
+        <TextView
+            android:id="@+id/idQuartier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            style="@style/StylegetValue"
+            app:layout_constraintTop_toBottomOf="@id/idTextViewVille"
+            app:layout_constraintStart_toEndOf="@id/idTextViewNoteDebut"/>
+
+
+        <TextView
+            android:id="@+id/idTextViewNumeroQ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Numero :"
+            style="@style/mystyleButton"
+            app:layout_constraintTop_toBottomOf="@id/idTextViewQuartier"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="@dimen/marginleftWidget"
+            />
+
+        <!-- VALEUR A RECUPERER EN JAVA DU NUMERO DELA NOTE -->
+        <TextView
+            android:id="@+id/idNumeroQ"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            style="@style/StylegetValue"
+            app:layout_constraintTop_toBottomOf="@id/idTextViewQuartier"
+            app:layout_constraintStart_toEndOf="@id/idTextViewNoteDebut"/>
+
+
+        <TextView
+            android:id="@+id/idTextViewBP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BP :"
+            style="@style/mystyleButton"
+            app:layout_constraintTop_toBottomOf="@id/idTextViewNumeroQ"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="@dimen/marginleftWidget"
+            />
+
+        <!-- VALEUR A RECUPERER EN JAVA DU NUMERO DELA NOTE -->
+        <TextView
+            android:id="@+id/idBP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            style="@style/StylegetValue"
+            app:layout_constraintTop_toBottomOf="@id/idTextViewNumeroQ"
+            app:layout_constraintStart_toEndOf="@id/idTextViewNoteDebut"/>
+
+        <TextView
+            android:id="@+id/idTextViewTelephone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tél :"
+            style="@style/mystyleButton"
+            app:layout_constraintTop_toBottomOf="@id/idTextViewBP"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="@dimen/marginleftWidget"
+            />
+
+        <!-- VALEUR A RECUPERER EN JAVA DU NUMERO DELA NOTE -->
+        <TextView
+            android:id="@+id/idTelephone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            style="@style/StylegetValue"
+            app:layout_constraintTop_toBottomOf="@id/idTextViewBP"
+            app:layout_constraintStart_toEndOf="@id/idTextViewNoteDebut"/>
+
+
+        <TextView
+            android:id="@+id/idTextViewEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="E-Mail :"
+            style="@style/mystyleButton"
+            app:layout_constraintTop_toBottomOf="@id/idTextViewTelephone"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="@dimen/marginleftWidget"
+            />
+
+        <!-- VALEUR A RECUPERER EN JAVA DU NUMERO DELA NOTE -->
+        <TextView
+            android:id="@+id/idEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            style="@style/StylegetValue"
+            app:layout_constraintTop_toBottomOf="@id/idTextViewTelephone"
+            app:layout_constraintStart_toEndOf="@id/idTextViewNoteDebut"/>
+
+        <TextView
+            android:id="@+id/idTextViewPrecison"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Precision :"
+            style="@style/mystyleButton"
+            app:layout_constraintTop_toBottomOf="@id/idTextViewEmail"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="@dimen/marginleftWidget"
+            />
+
+        <!-- VALEUR A RECUPERER EN JAVA DU NUMERO DELA NOTE -->
+        <TextView
+            android:id="@+id/idprecison"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="okkkkkkkk"
+            style="@style/StylegetValue"
+            app:layout_constraintTop_toBottomOf="@id/idTextViewEmail"
+            app:layout_constraintStart_toEndOf="@id/idTextViewPrecison"/>
+
+        <TextView
+            android:id="@+id/idOrdonancement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. A REMPLIR PAR LE SERVICE ORDONATEUR"
+            app:layout_constraintTop_toBottomOf="@id/idTextViewEmail"
+            style="@style/mystyleValue"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="@dimen/marginTopTitle"
+            android:padding="@dimen/marginBetweenWidget"
+            />
+
+        <TextView
+            android:id="@+id/idTextViewDateReception"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date ordonnancement: :"
+            style="@style/mystyleButton"
+            app:layout_constraintTop_toBottomOf="@id/idOrdonancement"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="@dimen/marginleftWidget"
+            android:layout_marginTop="@dimen/marginTopTitle"
+            />
+
+        <!-- VALEUR A RECUPERER EN JAVA DU NUMERO DELA NOTE -->
+        <TextView
+            android:id="@+id/idDateReception"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            style="@style/StylegetValue"
+            app:layout_constraintTop_toBottomOf="@id/idOrdonancement"
+            app:layout_constraintStart_toEndOf="@id/idTextViewNoteDebut"
+            android:layout_marginTop="@dimen/marginTopTitle"
+            />
+
+        <TextView
+            android:id="@+id/idTextviewAvisMotive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Avis motive de l'ordonateur : "
+            style="@style/mystyleButton"
+            app:layout_constraintTop_toBottomOf="@id/idTextViewDateReception"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="@dimen/marginleftWidget"
+            />
+
+        <!-- VALEUR A RECUPERER EN JAVA DU NUMERO DELA NOTE -->
+        <TextView
+            android:id="@+id/idavisMotive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            style="@style/StylegetValue"
+            app:layout_constraintTop_toBottomOf="@id/idTextViewDateReception"
+            app:layout_constraintStart_toEndOf="@id/idTextViewNoteDebut"
+            />
+
+        <TextView
+            android:id="@+id/idTextviewAvisMotiveChiffre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Montant Visé en Chiffre : "
+            style="@style/mystyleButton"
+            app:layout_constraintTop_toBottomOf="@id/idTextviewAvisMotive"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="@dimen/marginleftWidget"
+            />
+
+        <!-- VALEUR A RECUPERER EN JAVA DU NUMERO DELA NOTE -->
+        <TextView
+            android:id="@+id/idMontantViseChiffre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            style="@style/StylegetValue"
+            app:layout_constraintTop_toBottomOf="@id/idTextviewAvisMotiveChiffre"
+            app:layout_constraintStart_toEndOf="@id/idTextViewNoteDebut"
+            />
+
+        <TextView
+            android:id="@+id/idTextviewAvisMotiveLettre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Montant Visé en Lettre : "
+            style="@style/mystyleButton"
+            app:layout_constraintTop_toBottomOf="@id/idTextviewAvisMotiveChiffre"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="@dimen/marginleftWidget"
+            />
+
+        <!-- VALEUR A RECUPERER EN JAVA DU NUMERO DELA NOTE -->
+        <TextView
+            android:id="@+id/idMontantviseLettre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ok"
+            style="@style/StylegetValue"
+            app:layout_constraintTop_toBottomOf="@id/idTextviewAvisMotive"
+            app:layout_constraintStart_toEndOf="@id/idTextViewNoteDebut"
+            />
+
+
+        <TextView
+            android:id="@+id/idTextviewAvisdevise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Devise : "
+            style="@style/mystyleButton"
+            app:layout_constraintTop_toBottomOf="@id/idTextviewAvisMotiveLettre"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="@dimen/marginleftWidget"/>
+
+        <TextView
+            android:id="@+id/idgetDeviseordo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fc"
+            style="@style/StylegetValue"
+            app:layout_constraintTop_toBottomOf="@id/idTextviewAvisMotiveLettre"
+            app:layout_constraintStart_toEndOf="@id/idTextviewAvisdevise"
+            />
+
+
+        <Button
+            android:id="@+id/btnEnregistrer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enregistrer"
+            app:layout_constraintTop_toBottomOf="@id/idgetDeviseordo"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginRight="@dimen/marginRightPerentToboton"
+            style="@style/mystyleButtonSave"
+            android:layout_marginLeft="@dimen/marginleftWidget"
+            android:background="@drawable/butonsave"
+            android:layout_marginTop="@dimen/marginBetweenWidget"
+            android:layout_margin="@dimen/marginBetweenWidget"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@id/btnEnregistrer"
+            android:layout_marginTop="@dimen/marginBetweenWidget"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
+
